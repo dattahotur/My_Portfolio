@@ -230,7 +230,7 @@ export default function App() {
           { text: "Connect with me:", type: "highlight" },
           { text: "  Email    : <a href='mailto:dattahotur369@gmail.com' style='color:#f59e0b;'>dattahotur369@gmail.com</a>", type: "system" },
           { text: "  GitHub   : <a href='https://github.com/dattahotur' target='_blank' style='color:#f59e0b;'>github.com/dattahotur</a>", type: "system" },
-          { text: "  LinkedIn : <a href='#' style='color:#f59e0b;'>linkedin.com/in/yourprofile</a>", type: "system" }
+          { text: "  LinkedIn : <a href='https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322' target='_blank' style='color:#f59e0b;'>linkedin.com/in/gargeya-datta-hotur-7ab80a322</a>", type: "system" }
         ]);
       },
       clear: () => {
@@ -802,8 +802,8 @@ export default function App() {
               </div>
               <div>
                 <h3>LinkedIn</h3>
-                <a href="#" target="_blank" rel="noreferrer">
-                  linkedin.com/in/yourprofile
+                <a href="https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322" target="_blank" rel="noreferrer">
+                  linkedin.com/in/gargeya-datta-hotur-7ab80a322
                 </a>
               </div>
             </div>
@@ -889,7 +889,7 @@ export default function App() {
           <a href="https://github.com/dattahotur" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
           <a href="mailto:dattahotur369@gmail.com">Email</a>
