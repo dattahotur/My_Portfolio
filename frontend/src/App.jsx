@@ -59,6 +59,8 @@ export default function App() {
   });
   const [formStatus, setFormStatus] = useState({ type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [typingText, setTypingText] = useState("");
 
   // ── Refs ──
   const terminalInputRef = useRef(null);
@@ -69,7 +71,7 @@ export default function App() {
     sharemyfood: {
       title: "ShareMyFood",
       image: "/images/projects_images/sharemyfood.jpeg",
-      description: "Developed a microservices-based MERN application connecting customers, restaurants, NGOs, and delivery partners. Implemented order management, food donation workflows, secure authentication, real-time notifications, and MongoDB integration. It connects directly to the companion RidePartner portal: when an order is created, ShareMyFood dispatches it to RidePartner, tracking the driver's real-time progress and status changes (Accepted, Picked Up, Delivered) to update customers instantly.",
+      description: "A MERN microservices-based food waste reduction platform connecting food donors, users, NGOs, and delivery partners. Implements order management, food donation workflows, secure JWT authentication, real-time notifications, and MongoDB integration. Connects directly to the companion Deliver My Food portal for dispatch and delivery tracking.",
       challenges: [
         "Designed and implemented 5 distinct microservices (User, Recipe, Order, Notification, Delivery) operating behind a centralized API Gateway.",
         "Built a robust delivery partner workflow with real-time status updates, rating prompts, and warning banners for platform policy enforcement.",
@@ -77,13 +79,13 @@ export default function App() {
         "Enforced platform rules restricting role access (e.g., preventing restaurants from claiming donations and requiring NGO verification)."
       ],
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Docker", "REST API", "Microservices", "Nodemailer"],
-      demoUrl: "#",
-      githubUrl: "https://github.com/dattahotur/ShareMyFood-app.git"
+      demoUrl: "https://sharemyfood-a193h9az7-dattas-projects-41fd6ae5.vercel.app",
+      githubUrl: "https://github.com/dattahotur/ShareMyFood_APP"
     },
-    deliveryapp: {
-      title: "RidePartner (Delivery App)",
+    delivermyfood: {
+      title: "Deliver My Food",
       image: "/images/projects_images/deliveryapp.png",
-      description: "Designed and built an interactive driver portal within a microservices architecture. Operating as a companion driver app for ShareMyFood, it polls the central API gateway to fetch pending dispatches, manages the delivery lifecycle (Pending -> Accepted -> Picked Up -> Delivered), and synchronizes order states back to ShareMyFood while processing wallet earnings and payouts.",
+      description: "A MERN delivery partner management platform integrated with ShareMyFood for real-time food delivery operations. Operating as a companion driver app for ShareMyFood, it polls the central API gateway to fetch pending dispatches, manages the delivery lifecycle, and synchronizes order states back to ShareMyFood while processing wallet earnings and payouts.",
       challenges: [
         "Constructed a status-machine for order tracking (Pending -> Accepted -> Picked Up -> Delivered) preventing race conditions during claims.",
         "Implemented a robust direct withdrawal portal supporting instant payouts via Bank Account/UPI with strict format validation.",
@@ -91,22 +93,8 @@ export default function App() {
         "Designed policy enforcement features issuing warning banners and Infraction Panels to active drivers."
       ],
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Axios", "REST API", "Microservices", "Lucide Icons"],
-      demoUrl: "#",
-      githubUrl: "https://github.com/dattahotur/ShareMyFood-app.git"
-    },
-    portfolio: {
-      title: "My Portfolio",
-      image: "/images/projects_images/portfolio.png",
-      description: "Designed and developed a modern responsive portfolio website to showcase projects, skills, and developer profile with smooth UI and animations.",
-      challenges: [
-        "Implemented responsive designs down to 320px screen width using media queries and CSS grid layouts.",
-        "Built a Geek-Mode CLI Terminal emulator letting technical recruiters run shell-like commands to query skills and project details.",
-        "Integrated an interactive skills-filtering system that highlights relevant projects using hardware-accelerated CSS transitions.",
-        "Created a custom Node.js contact form backend with nodemailer for secure, direct email delivery."
-      ],
-      tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "Nodemailer", "Responsive UI", "CSS Animations"],
-      demoUrl: "#",
-      githubUrl: "#"
+      demoUrl: "https://deliver-my-food-dn92xfonu-dattas-projects-41fd6ae5.vercel.app",
+      githubUrl: "https://github.com/dattahotur/your-delivery-repo"
     }
   };
 
@@ -167,31 +155,21 @@ export default function App() {
       id: "sharemyfood",
       title: "ShareMyFood",
       image: "/images/projects_images/sharemyfood.jpeg",
-      desc: "Developed a MERN microservices app connecting customers, restaurants, NGOs, and delivery partners. It integrates directly with the RidePartner companion app to dispatch delivery jobs, track driver status, and synchronize order fulfillment states in real-time.",
+      desc: "A MERN microservices-based food waste reduction platform connecting food donors, users, NGOs, and delivery partners. Implements order management, food donation workflows, secure JWT authentication, real-time notifications, and MongoDB integration. Connects directly to the companion Deliver My Food portal for dispatch and delivery tracking.",
       techs: ["React", "Node.js", "MongoDB", "Express.js"],
       dataTech: "react nodejs expressjs mongodb frontend tools",
-      github: "https://github.com/dattahotur/ShareMyFood-app.git",
-      demo: "#"
+      github: "https://github.com/dattahotur/ShareMyFood_APP",
+      demo: "https://sharemyfood-a193h9az7-dattas-projects-41fd6ae5.vercel.app"
     },
     {
-      id: "deliveryapp",
-      title: "RidePartner (Delivery App)",
+      id: "delivermyfood",
+      title: "Deliver My Food",
       image: "/images/projects_images/deliveryapp.png",
-      desc: "Designed and built an interactive driver portal companion for ShareMyFood, integrating real-time order matching, status tracking updates, and direct wallet payouts. It polls the ShareMyFood services to claim dispatches and updates the central database upon delivery.",
-      techs: ["React", "Express.js", "MongoDB", "Microservices"],
+      desc: "A MERN delivery partner management platform integrated with ShareMyFood for real-time food delivery operations.",
+      techs: ["React", "Express.js", "MongoDB", "JWT"],
       dataTech: "react nodejs expressjs mongodb frontend tools",
-      github: "https://github.com/dattahotur/ShareMyFood-app.git",
-      demo: "#"
-    },
-    {
-      id: "portfolio",
-      title: "My Portfolio",
-      image: "/images/projects_images/portfolio.png",
-      desc: "Designed and developed a modern responsive portfolio website to showcase projects, skills, and developer profile with smooth UI and animations.",
-      techs: ["HTML", "CSS", "Responsive UI"],
-      dataTech: "frontend html css",
-      github: "#",
-      demo: "#"
+      github: "https://github.com/dattahotur/your-delivery-repo",
+      demo: "https://deliver-my-food-dn92xfonu-dattas-projects-41fd6ae5.vercel.app"
     }
   ];
 
@@ -240,12 +218,10 @@ export default function App() {
         setTerminalHistory(prev => [
           ...prev,
           { text: "My Key Projects:", type: "highlight" },
-          { text: "1. <span class='highlight'>ShareMyFood</span>: Microservices-based MERN application connecting customers, restaurants, NGOs, and delivery partners. Dispatches delivery jobs directly to the RidePartner companion app and tracks driver status updates in real-time.", type: "success" },
+          { text: "1. <span class='highlight'>ShareMyFood</span>: A MERN microservices-based food waste reduction platform connecting food donors, users, NGOs, and delivery partners. Connects directly to the companion Deliver My Food portal for dispatch and delivery tracking.", type: "success" },
           { text: "   Tech: React.js, Node.js, Express.js, MongoDB, Docker, API Gateway", type: "system" },
-          { text: "2. <span class='highlight'>RidePartner (Delivery App)</span>: Companion driver portal within the ShareMyFood microservices architecture, polling central services for pending dispatches, managing delivery states, and processing wallet payouts upon completion.", type: "success" },
-          { text: "   Tech: React.js, Node.js, Express.js, MongoDB, REST API, Geolocation Simulation", type: "system" },
-          { text: "3. <span class='highlight'>My Portfolio</span>: Custom responsive developer portfolio displaying developer bio, timeline, and interactive modules.", type: "success" },
-          { text: "   Tech: HTML5, CSS3, ES6 JavaScript, Nodemailer Email Server", type: "system" }
+          { text: "2. <span class='highlight'>Deliver My Food</span>: A MERN delivery partner management platform integrated with ShareMyFood for real-time food delivery operations.", type: "success" },
+          { text: "   Tech: React.js, Node.js, Express.js, MongoDB, REST API", type: "system" }
         ]);
       },
       contact: () => {
@@ -331,6 +307,41 @@ export default function App() {
     };
   }, [activeProject, isTerminalOpen]);
 
+  // ── Typing Effect Loop ──
+  useEffect(() => {
+    const titles = ["Full Stack Developer", "MERN Stack Developer", "Java Programmer"];
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let timer;
+
+    function type() {
+      const currentTitle = titles[titleIndex];
+      if (!isDeleting) {
+        setTypingText(currentTitle.substring(0, charIndex + 1));
+        charIndex++;
+        if (charIndex === currentTitle.length) {
+          isDeleting = true;
+          timer = setTimeout(type, 1800);
+        } else {
+          timer = setTimeout(type, 80);
+        }
+      } else {
+        setTypingText(currentTitle.substring(0, charIndex - 1));
+        charIndex--;
+        if (charIndex === 0) {
+          isDeleting = false;
+          titleIndex = (titleIndex + 1) % titles.length;
+          timer = setTimeout(type, 400);
+        } else {
+          timer = setTimeout(type, 40);
+        }
+      }
+    }
+    type();
+    return () => clearTimeout(timer);
+  }, []);
+
   // ── Handle Skills Filter Click ──
   const handleSkillClick = (filter) => {
     if (activeFilter === filter) {
@@ -383,12 +394,23 @@ export default function App() {
         <div className="profile">
           <img className="profile-img" src="/images/my_name.png" alt="My Name" />
         </div>
-        <nav className="nav-links">
-          <a href="#about">about</a>
-          <a href="#skills">skills</a>
-          <a href="#timeline">journey</a>
-          <a href="#projects">projects</a>
-          <a href="#contact">contact</a>
+        <button 
+          id="hamburgerBtn" 
+          className={`hamburger ${isMobileMenuOpen ? "active" : ""}`} 
+          aria-label="Toggle navigation menu"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+        <nav className={`nav-links ${isMobileMenuOpen ? "mobile-open" : ""}`}>
+          <a href="#hero" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
+          <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>about</a>
+          <a href="#skills" onClick={() => setIsMobileMenuOpen(false)}>skills</a>
+          <a href="#timeline" onClick={() => setIsMobileMenuOpen(false)}>journey</a>
+          <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>projects</a>
+          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>contact</a>
         </nav>
       </header>
 
@@ -397,7 +419,8 @@ export default function App() {
         <div className="hero-content">
           <h1>Architecting Scalable Full-Stack Solutions</h1>
           <h2 className="hero-subtitle">
-            Full Stack Developer | B.Tech Final Year Student
+            <span className="typing-text">{typingText}</span>
+            <span className="typing-cursor">|</span>
           </h2>
           <p>
             B.Tech Final Year student and aspiring Full Stack Developer passionate
