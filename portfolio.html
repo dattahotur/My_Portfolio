@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Gargeya Datta Hotur — Full Stack Developer Portfolio. B.Tech Final Year student specializing in MERN stack, microservices, and scalable web applications.">
+        <title>Gargeya Datta Hotur | Full Stack Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <!-- ================= TOAST CONTAINER ================= -->
+        <div id="toastContainer" class="toast-container"></div>
+
+        <!-- ================= HEADER ================= -->
+        <header id="mainHeader">
+            <div class="profile">
+                <img class="profile-img" src="images/my_name.png" alt="Gargeya Datta Hotur">
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button id="hamburgerBtn" class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav id="navMenu" class="nav-links">
+                <a href="#hero" data-section="hero">Home</a>
+                <a href="#about" data-section="about">About</a>
+                <a href="#skills" data-section="skills">Skills</a>
+                <a href="#timeline" data-section="timeline">Journey</a>
+                <a href="#projects" data-section="projects">Projects</a>
+                <a href="#contact" data-section="contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="hero-container">
+            <div class="hero-gradient-orb hero-orb-1"></div>
+            <div class="hero-gradient-orb hero-orb-2"></div>
+            <div class="hero-content">
+                <h1>Architecting Scalable Full-Stack Solutions</h1>
+
+                <h2 class="hero-subtitle">
+                    <span id="typingText" class="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </h2>
+
+                <p>
+                    B.Tech Final Year student and aspiring Full Stack Developer
+                    passionate about designing and developing modern web
+                    applications with clean user interfaces and efficient backend
+                    systems. Skilled in React, Node.js, MongoDB, and Java,
+                    with a strong focus on creating scalable, responsive, and
+                    user-centric digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary" data-scroll-to="projects">
+                        View Projects
+                    </a>
+                    <button type="button" class="btn-secondary btn-disabled" disabled title="Resume will be available soon">
+                        Download Resume
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img id="photo" src="images/datta.png" alt="Gargeya Datta Hotur">
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about">
+            <h1 class="section-heading animate-on-scroll">About Me</h1>
+            <p class="animate-on-scroll">
+                Final year B.Tech student and aspiring Full Stack Developer specializing in MERN stack development.
+                Passionate about building scalable web applications, backend systems, and solving problems
+                using Data Structures and Algorithms.
+            </p>
+            <div class="about-cards">
+                <div class="card animate-on-scroll" style="--delay: 0.1s">
+                    <img class="about-card-img" src="images/fulls_stack.jpg" alt="Full Stack Developer">
+                    Full Stack Developer
+                </div>
+                <div class="card animate-on-scroll" style="--delay: 0.2s">
+                    <img class="about-card-img" src="images/project_builder.png" alt="Project Builder">
+                    Project Builder
+                </div>
+                <div class="card animate-on-scroll" style="--delay: 0.3s">
+                    <img class="about-card-img" src="images/continuous_learning.webp" alt="Continuous Learner">
+                    Continuous Learner
+                </div>
+                <div class="card animate-on-scroll" style="--delay: 0.4s">
+                    <img class="about-card-img" src="images/problem solving.jpg" alt="Problem Solver">
+                    Problem Solver
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATS SECTION ================= -->
+        <section id="stats">
+            <div class="stat-card animate-on-scroll" style="--delay: 0.1s">
+                <h2>2+</h2>
+                <p>Major Projects</p>
+            </div>
+            <div class="stat-card animate-on-scroll" style="--delay: 0.2s">
+                <h2>6+</h2>
+                <p>Microservices Built</p>
+            </div>
+            <div class="stat-card animate-on-scroll" style="--delay: 0.3s">
+                <h2>10+</h2>
+                <p>Technologies Used</p>
+            </div>
+            <div class="stat-card animate-on-scroll" style="--delay: 0.4s">
+                <h2>100%</h2>
+                <p>Learning Mindset</p>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section id="skills">
+            <h1 class="section-heading animate-on-scroll">My Skills</h1>
+
+            <div class="skills-categories-container">
+                <div class="skills-category-row animate-on-scroll" style="--delay: 0.1s">
+                    <div class="skills-category-heading">Frontend</div>
+                    <div class="skills-items-grid">
+                        <div class="skill-pill" data-filter="react">React.js</div>
+                        <div class="skill-pill" data-filter="frontend">JavaScript</div>
+                        <div class="skill-pill" data-filter="frontend">HTML5</div>
+                        <div class="skill-pill" data-filter="frontend">CSS3</div>
+                    </div>
+                </div>
+                <div class="skills-category-row animate-on-scroll" style="--delay: 0.15s">
+                    <div class="skills-category-heading">Backend</div>
+                    <div class="skills-items-grid">
+                        <div class="skill-pill" data-filter="nodejs">Node.js</div>
+                        <div class="skill-pill" data-filter="expressjs">Express.js</div>
+                        <div class="skill-pill" data-filter="expressjs">REST APIs</div>
+                        <div class="skill-pill" data-filter="nodejs">Microservices</div>
+                    </div>
+                </div>
+                <div class="skills-category-row animate-on-scroll" style="--delay: 0.2s">
+                    <div class="skills-category-heading">Database</div>
+                    <div class="skills-items-grid">
+                        <div class="skill-pill" data-filter="mongodb">MongoDB</div>
+                        <div class="skill-pill" data-filter="mongodb">Mongoose</div>
+                        <div class="skill-pill" data-filter="mysql">MySQL</div>
+                    </div>
+                </div>
+                <div class="skills-category-row animate-on-scroll" style="--delay: 0.25s">
+                    <div class="skills-category-heading">Programming</div>
+                    <div class="skills-items-grid">
+                        <div class="skill-pill" data-filter="java">Java</div>
+                        <div class="skill-pill" data-filter="frontend">JavaScript</div>
+                    </div>
+                </div>
+                <div class="skills-category-row animate-on-scroll" style="--delay: 0.3s">
+                    <div class="skills-category-heading">Tools</div>
+                    <div class="skills-items-grid">
+                        <div class="skill-pill" data-filter="tools">Git</div>
+                        <div class="skill-pill" data-filter="tools">GitHub</div>
+                        <div class="skill-pill" data-filter="tools">Postman</div>
+                        <div class="skill-pill" data-filter="tools">Docker</div>
+                        <div class="skill-pill" data-filter="tools">Vercel</div>
+                        <div class="skill-pill" data-filter="tools">Render</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= JOURNEY TIMELINE ================= -->
+        <section id="timeline">
+            <h1 class="section-heading animate-on-scroll">My Journey</h1>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3>B.Tech in Computer Science</h3>
+                        <p>Developing deep foundations in data structures, algorithms, and software engineering principles at university while maintaining a strong academic focus.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Exploring Web Development</h3>
+                        <p>Mastered modern JavaScript, HTML5, CSS3, responsive layout design, and started building dynamic frontends using React.js.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Microservices & Full-Stack Mastery</h3>
+                        <p>Architected and built ShareMyFood — a microservices-based web application utilizing Express, MongoDB, Node.js, API Gateways, and atomic state synchronization.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Advanced Systems & Delivery Platforms</h3>
+                        <p>Optimized microservices, fixed race conditions in claims handling, and integrated secure validation constraints for delivery payouts on Deliver My Food.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section id="projects">
+            <h1 class="section-heading animate-on-scroll">My Projects</h1>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: ShareMyFood -->
+                <div class="project-card animate-on-scroll" data-project-id="sharemyfood" data-tech="react nodejs expressjs mongodb frontend tools" style="--delay: 0.1s">
+                    <img src="images/projects_images/sharemyfood.jpeg" alt="ShareMyFood">
+                    <div class="project-content">
+                        <h2>ShareMyFood 🍱</h2>
+                        <p>
+                            A MERN microservices-based food waste reduction platform connecting food donors, users, NGOs, and delivery partners.
+                        </p>
+                        <ul class="project-features">
+                            <li>Microservices architecture</li>
+                            <li>API Gateway</li>
+                            <li>JWT Authentication</li>
+                            <li>Role-based access</li>
+                            <li>Food ordering & donation system</li>
+                            <li>Delivery integration</li>
+                            <li>Admin moderation system</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                            <span>Microservices</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/dattahotur/ShareMyFood_APP" class="project-btn secondary-project-btn" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                            <a href="https://sharemyfood-a193h9az7-dattas-projects-41fd6ae5.vercel.app" class="project-btn" target="_blank" rel="noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Deliver My Food -->
+                <div class="project-card animate-on-scroll" data-project-id="delivermyfood" data-tech="react nodejs expressjs mongodb frontend tools" style="--delay: 0.2s">
+                    <img src="images/projects_images/deliveryapp.png" alt="Deliver My Food">
+                    <div class="project-content">
+                        <h2>Deliver My Food 🚚</h2>
+                        <p>
+                            A MERN delivery partner management platform integrated with ShareMyFood for real-time food delivery operations.
+                        </p>
+                        <ul class="project-features">
+                            <li>Rider dashboard</li>
+                            <li>Delivery lifecycle tracking</li>
+                            <li>Earnings management</li>
+                            <li>Rating/report system</li>
+                            <li>Admin warning workflow</li>
+                            <li>Secure authentication</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/dattahotur/your-delivery-repo" class="project-btn secondary-project-btn" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                            <a href="https://deliver-my-food-dn92xfonu-dattas-projects-41fd6ae5.vercel.app" class="project-btn" target="_blank" rel="noreferrer">
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOATING TERMINAL LAUNCHER -->
+            <button id="terminalLauncher" class="terminal-fab" title="Open Geek-Mode Terminal" aria-label="Open Geek-Mode Terminal">
+                <span>&gt;_</span>
+            </button>
+
+            <!-- CLI TERMINAL OVERLAY -->
+            <div id="terminalOverlay" class="terminal-overlay">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn close" role="button" aria-label="Close terminal"></span>
+                            <span class="term-btn minimize" role="button" aria-label="Minimize terminal"></span>
+                            <span class="term-btn maximize" role="button" aria-label="Maximize terminal"></span>
+                        </div>
+                        <div class="terminal-title">gdatta@portfolio:~</div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div id="terminalHistory">
+                            <p class="term-text system">Welcome to Gargeya Datta Hotur's Portfolio CLI [Version 1.0.0]</p>
+                            <p class="term-text system">Type 'help' to see list of available commands.</p>
+                            <p class="term-text">&nbsp;</p>
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">gdatta@portfolio:~$</span>
+                            <input type="text" id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT DETAILS MODAL -->
+            <div id="projectModal" class="modal-overlay">
+                <div class="modal-card">
+                    <button class="modal-close" aria-label="Close project details modal">&times;</button>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" alt="Project Image">
+                        <div class="modal-info">
+                            <h2 id="modalTitle">Project Title</h2>
+                            <div id="modalTech" class="tech-stack modal-tech"></div>
+                            <h3>About the Project</h3>
+                            <p id="modalDescription">Project description goes here...</p>
+                            <h3>Key Contributions & Challenges</h3>
+                            <ul id="modalChallenges"></ul>
+                            <div class="modal-actions">
+                                <a id="modalDemo" class="project-btn" rel="noreferrer" style="display: none;">Live Demo</a>
+                                <a id="modalGithub" class="project-btn secondary-project-btn" rel="noreferrer" style="display: none;">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact">
+            <h1 class="section-heading animate-on-scroll">Let's Connect</h1>
+
+            <p class="contact-subtitle animate-on-scroll">
+                Open to internships, collaborations, and exciting
+                Full Stack Development opportunities.
+            </p>
+
+            <div class="contact-container">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-info animate-on-scroll" style="--delay: 0.1s">
+                    <h2>Get In Touch</h2>
+                    <p>
+                        Whether you have a project idea, internship opportunity,
+                        or simply want to connect, feel free to reach out.
+                        I'm always open to learning, collaborating,
+                        and building innovative digital solutions.
+                    </p>
+
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:dattahotur369@gmail.com">
+                                dattahotur369@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>💻</span>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/dattahotur" target="_blank" rel="noreferrer">
+                                github.com/dattahotur
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>🔗</span>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322" target="_blank" rel="noreferrer">
+                                linkedin.com/in/gargeya-datta-hotur
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="contact-form animate-on-scroll" style="--delay: 0.2s">
+                    <form id="contactForm" novalidate>
+                        <div class="input-group">
+                            <div class="form-field">
+                                <input
+                                    id="name"
+                                    type="text"
+                                    placeholder="Your Name"
+                                    required
+                                    minlength="2"
+                                    maxlength="100"
+                                    aria-label="Your Name">
+                                <span class="field-error" id="nameError"></span>
+                            </div>
+                            <div class="form-field">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="Your Email"
+                                    required
+                                    aria-label="Your Email">
+                                <span class="field-error" id="emailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <input
+                                id="subject"
+                                type="text"
+                                placeholder="Subject"
+                                required
+                                minlength="3"
+                                maxlength="200"
+                                aria-label="Subject">
+                            <span class="field-error" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea
+                                id="message"
+                                rows="7"
+                                placeholder="Write Your Message..."
+                                required
+                                minlength="10"
+                                maxlength="2000"
+                                aria-label="Write Your Message"></textarea>
+                            <span class="field-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer id="footer">
+            <h3>Gargeya Datta Hotur</h3>
+            <p>Full Stack Developer | B.Tech Final Year Student</p>
+
+            <div class="footer-links">
+                <a href="https://github.com/dattahotur" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="mailto:dattahotur369@gmail.com">Email</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Gargeya Datta Hotur. All Rights Reserved.
+            </p>
+        </footer>
+
+        <!-- ================= SCROLL TO TOP ================= -->
+        <button id="scrollToTopBtn" class="scroll-to-top" title="Scroll to top" aria-label="Scroll to top">
+            ↑
+        </button>
+
+        <!-- ================= JAVASCRIPT ================= -->
+        <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    // ── Typing Effect ──
+    const typingElement = document.getElementById("typingText");
+    const titles = [
+        "Full Stack Developer",
+        "MERN Stack Developer",
+        "Java Programmer"
+    ];
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typeSpeed = 80;
+    const deleteSpeed = 40;
+    const pauseAfterType = 1800;
+    const pauseAfterDelete = 400;
+
+    function typeEffect() {
+        const currentTitle = titles[titleIndex];
+
+        if (!isDeleting) {
+            typingElement.textContent = currentTitle.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === currentTitle.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, pauseAfterType);
+                return;
+            }
+            setTimeout(typeEffect, typeSpeed);
+        } else {
+            typingElement.textContent = currentTitle.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) {
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(typeEffect, pauseAfterDelete);
+                return;
+            }
+            setTimeout(typeEffect, deleteSpeed);
+        }
+    }
+    typeEffect();
+
+    // ── Mobile Hamburger Menu ──
+    const hamburger = document.getElementById("hamburgerBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("mobile-open");
+    });
+
+    // ── Active Nav Highlighting (scroll-based) ──
+    const navLinks = document.querySelectorAll(".nav-links a[data-section]");
+    const navHeader = document.getElementById("mainHeader");
+
+    // Sections that map to nav links (in DOM order)
+    const trackedSections = [
+        document.getElementById("hero"),
+        document.getElementById("about"),
+        document.getElementById("skills"),
+        document.getElementById("timeline"),
+        document.getElementById("projects"),
+        document.getElementById("contact")
+    ].filter(Boolean);
+
+    function getHeaderHeight() {
+        return navHeader ? navHeader.offsetHeight : 90;
+    }
+
+    function updateActiveNav() {
+        const headerH = getHeaderHeight();
+        // Trigger point is positioned across the upper-middle viewing area of the viewport below the navbar
+        const triggerY = window.scrollY + headerH + (window.innerHeight - headerH) * 0.35;
+        let activeId = "";
+
+        // Walk through sections in order — the last one whose top crossed triggerY wins
+        for (const section of trackedSections) {
+            if (section.offsetTop <= triggerY) {
+                activeId = section.id;
+            }
+        }
+
+        // Edge case: if scrolled near the top of the page, activate the first section (Home)
+        if (window.scrollY < 40 && trackedSections[0]) {
+            activeId = trackedSections[0].id;
+        }
+
+        // Edge case: if scrolled to the very bottom of the page, activate the last section (Contact)
+        if ((window.innerHeight + Math.ceil(window.scrollY)) >= document.documentElement.scrollHeight - 20) {
+            activeId = trackedSections[trackedSections.length - 1] ? trackedSections[trackedSections.length - 1].id : "";
+        }
+
+        navLinks.forEach(link => {
+            if (link.getAttribute("data-section") === activeId && activeId !== "") {
+                link.classList.add("nav-active");
+            } else {
+                link.classList.remove("nav-active");
+            }
+        });
+    }
+
+    // Throttled passive scroll listener for optimal performance & no console warnings
+    let scrollTicking = false;
+    window.addEventListener("scroll", () => {
+        if (!scrollTicking) {
+            requestAnimationFrame(() => {
+                updateActiveNav();
+                scrollTicking = false;
+            });
+            scrollTicking = true;
+        }
+    }, { passive: true });
+
+    // Run once on load
+    updateActiveNav();
+
+    // ── Safe Section Smooth Scrolling (File Protocol & Capture Interceptor) ──
+    // When running under file:// protocol in Edge/Chrome preview frames, Chromium C++ engine checks security origin
+    // on any anchor element with href^="#". We dynamically adapt attributes locally when on file:// so Chromium never triggers an origin warning.
+    const isFileEnv = window.location.protocol === "file:";
+    if (isFileEnv) {
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            const h = a.getAttribute("href");
+            if (h && h.startsWith("#") && h.length > 1) {
+                a.setAttribute("data-file-target", h);
+                a.removeAttribute("href");
+                a.style.cursor = "pointer";
+            }
+        });
+    }
+
+    const handleSectionClick = (e, link) => {
+        if (!link) return;
+        let target = link.getAttribute("href") || link.getAttribute("data-file-target");
+        if (!target || target === "#" || !target.startsWith("#")) {
+            const scrollToAttr = link.getAttribute("data-scroll-to");
+            if (scrollToAttr) target = "#" + scrollToAttr;
+        }
+        if (!target || target === "#") return;
+
+        const section = document.querySelector(target);
+        if (section) {
+            e.preventDefault();
+            const headerH = getHeaderHeight();
+            const targetY = target === "#hero" ? 0 : Math.max(0, section.offsetTop - headerH);
+
+            window.scrollTo({
+                top: targetY,
+                behavior: "smooth"
+            });
+
+            // Close mobile hamburger menu
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("mobile-open");
+        }
+    };
+
+    // Attach direct listeners to navLinks right away
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            handleSectionClick(e, link);
+        });
+    });
+
+    // Also attach global delegator in CAPTURE phase to intercept ANY internal anchor clicks before bubbling
+    document.addEventListener("click", (e) => {
+        const link = e.target.closest('a[href^="#"], a[data-file-target], a[data-scroll-to]');
+        if (link) {
+            e.preventDefault();
+            handleSectionClick(e, link);
+        }
+    }, { capture: true });
+
+    // ── Scroll-Triggered Animations ──
+    const animateElements = document.querySelectorAll(".animate-on-scroll");
+    const scrollObserverOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -40px 0px"
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = entry.target.style.getPropertyValue("--delay") || "0s";
+                entry.target.style.transitionDelay = delay;
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, scrollObserverOptions);
+
+    animateElements.forEach(el => scrollObserver.observe(el));
+
+    // ── Scroll To Top Button ──
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    }, { passive: true });
+
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // ── Skills Filtering Logic ──
+    const skillCards = document.querySelectorAll(".skill-pill");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    skillCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const filter = card.getAttribute("data-filter");
+            const isActive = card.classList.contains("active-filter");
+
+            skillCards.forEach(c => c.classList.remove("active-filter"));
+
+            if (isActive) {
+                projectCards.forEach(p => {
+                    p.classList.remove("dimmed");
+                    p.classList.remove("highlighted");
+                });
+            } else {
+                card.classList.add("active-filter");
+                projectCards.forEach(p => {
+                    const tech = p.getAttribute("data-tech") || "";
+                    if (tech.split(" ").includes(filter)) {
+                        p.classList.remove("dimmed");
+                        p.classList.add("highlighted");
+                    } else {
+                        p.classList.remove("highlighted");
+                        p.classList.add("dimmed");
+                    }
+                });
+            }
+        });
+    });
+
+    // ── Project Modal Details & Logic ──
+    const projectDetails = {
+        sharemyfood: {
+            title: "ShareMyFood 🍱",
+            image: "images/projects_images/sharemyfood.jpeg",
+            description: "A MERN microservices-based food waste reduction platform connecting food donors, users, NGOs, and delivery partners. Implements order management, food donation workflows, secure JWT authentication, real-time notifications, and MongoDB integration. Connects directly to the companion Deliver My Food portal for dispatch and delivery tracking.",
+            challenges: [
+                "Designed and implemented 5 distinct microservices (User, Recipe, Order, Notification, Delivery) operating behind a centralized API Gateway.",
+                "Built a robust delivery partner workflow with real-time status updates, rating prompts, and warning banners for platform policy enforcement.",
+                "Resolved critical race conditions in claiming food donations by implementing atomic database increments and decrements in the recipe service.",
+                "Enforced platform rules restricting role access (e.g., preventing restaurants from claiming donations and requiring NGO verification)."
+            ],
+            tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Microservices"],
+            demoUrl: "https://sharemyfood-a193h9az7-dattas-projects-41fd6ae5.vercel.app",
+            githubUrl: "https://github.com/dattahotur/ShareMyFood_APP"
+        },
+        delivermyfood: {
+            title: "Deliver My Food 🚚",
+            image: "images/projects_images/deliveryapp.png",
+            description: "A MERN delivery partner management platform integrated with ShareMyFood for real-time food delivery operations. Features a rider dashboard, delivery lifecycle tracking, earnings management, and admin moderation.",
+            challenges: [
+                "Constructed a status-machine for order tracking (Pending → Accepted → Picked Up → Delivered) preventing race conditions during claims.",
+                "Implemented a robust direct withdrawal portal supporting instant payouts via Bank Account/UPI with strict format validation.",
+                "Built real-time dispatch alerts polling system to notify online riders when orders become available.",
+                "Designed policy enforcement features issuing warning banners and Infraction Panels to active drivers."
+            ],
+            tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+            demoUrl: "https://deliver-my-food-dn92xfonu-dattas-projects-41fd6ae5.vercel.app",
+            githubUrl: "https://github.com/dattahotur/your-delivery-repo"
+        }
+    };
+
+    const modal = document.getElementById("projectModal");
+    const closeBtn = modal.querySelector(".modal-close");
+    const modalImg = document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalTech = document.getElementById("modalTech");
+    const modalDesc = document.getElementById("modalDescription");
+    const modalChallenges = document.getElementById("modalChallenges");
+    const modalDemo = document.getElementById("modalDemo");
+    const modalGithub = document.getElementById("modalGithub");
+
+    projectCards.forEach(card => {
+        const img = card.querySelector("img");
+        const title = card.querySelector("h2");
+        if (img) img.style.cursor = "pointer";
+        if (title) title.style.cursor = "pointer";
+
+        const openModal = () => {
+            const projectId = card.getAttribute("data-project-id");
+            const details = projectDetails[projectId];
+            if (!details) return;
+
+            modalImg.src = details.image;
+            modalImg.alt = details.title;
+            modalTitle.textContent = details.title;
+            modalDesc.textContent = details.description;
+
+            // Tech stack
+            modalTech.innerHTML = "";
+            details.tech.forEach(t => {
+                const span = document.createElement("span");
+                span.textContent = t;
+                modalTech.appendChild(span);
+            });
+
+            // Challenges/Contributions
+            modalChallenges.innerHTML = "";
+            details.challenges.forEach(c => {
+                const li = document.createElement("li");
+                li.textContent = c;
+                modalChallenges.appendChild(li);
+            });
+
+            // Buttons — dynamically assign target only if valid URL exists
+            if (details.demoUrl) {
+                modalDemo.href = details.demoUrl;
+                modalDemo.target = "_blank";
+                modalDemo.style.display = "inline-block";
+            } else {
+                modalDemo.removeAttribute("href");
+                modalDemo.removeAttribute("target");
+                modalDemo.style.display = "none";
+            }
+
+            if (details.githubUrl) {
+                modalGithub.href = details.githubUrl;
+                modalGithub.target = "_blank";
+                modalGithub.style.display = "inline-block";
+            } else {
+                modalGithub.removeAttribute("href");
+                modalGithub.removeAttribute("target");
+                modalGithub.style.display = "none";
+            }
+
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        };
+
+        if (img) img.addEventListener("click", openModal);
+        if (title) title.addEventListener("click", openModal);
+    });
+
+    const closeModal = () => {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+    };
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+    });
+
+    // ── Timeline Scroll Animation ──
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    const timelineObserverOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const timelineObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, timelineObserverOptions);
+
+    timelineItems.forEach(item => timelineObserver.observe(item));
+
+    // ── CLI Terminal Logic ──
+    const termLauncher = document.getElementById("terminalLauncher");
+    const termOverlay = document.getElementById("terminalOverlay");
+    const termClose = termOverlay.querySelector(".term-btn.close");
+    const termInput = document.getElementById("terminalInput");
+    const termHistory = document.getElementById("terminalHistory");
+    const termBody = document.getElementById("terminalBody");
+
+    const toggleTerminal = () => {
+        const isActive = termOverlay.classList.contains("active");
+        if (isActive) {
+            termOverlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+        } else {
+            termOverlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+            setTimeout(() => termInput.focus(), 100);
+        }
+    };
+
+    termLauncher.addEventListener("click", toggleTerminal);
+    termClose.addEventListener("click", toggleTerminal);
+
+    termBody.addEventListener("click", () => termInput.focus());
+
+    termOverlay.addEventListener("click", (e) => {
+        if (e.target === termOverlay) toggleTerminal();
+    });
+
+    const addHistoryLine = (text, className = "") => {
+        const p = document.createElement("p");
+        p.className = `term-text ${className}`;
+        p.innerHTML = text;
+        termHistory.appendChild(p);
+        termBody.scrollTop = termBody.scrollHeight;
+    };
+
+    const commands = {
+        help: () => {
+            addHistoryLine("Available commands:", "system");
+            const helpCommands = [
+                { cmd: "help", desc: "Display this list of commands" },
+                { cmd: "whoami", desc: "Brief developer bio and education info" },
+                { cmd: "skills", desc: "Show full list of skills & proficiencies" },
+                { cmd: "projects", desc: "Detailed information about built projects" },
+                { cmd: "contact", desc: "Show email, github, and social contact links" },
+                { cmd: "clear", desc: "Clear the terminal screen" },
+                { cmd: "exit", desc: "Close the terminal console" }
+            ];
+            let gridHTML = "";
+            helpCommands.forEach(c => {
+                gridHTML += `<div class="term-help-grid"><span class="term-help-cmd">${c.cmd}</span><span class="term-help-desc">${c.desc}</span></div>`;
+            });
+            const div = document.createElement("div");
+            div.innerHTML = gridHTML;
+            termHistory.appendChild(div);
+            termBody.scrollTop = termBody.scrollHeight;
+        },
+        whoami: () => {
+            addHistoryLine("<span class='highlight'>Gargeya Datta Hotur</span> — Aspiring Full Stack Developer", "success");
+            addHistoryLine("Final year B.Tech student specializing in MERN stack development. Passionate about building scalable web applications and solving problems with DSA.", "system");
+            addHistoryLine("Location: Andhra Pradesh, India", "system");
+        },
+        skills: () => {
+            addHistoryLine("Technical Skills:", "highlight");
+            addHistoryLine("  Frontend     : React.js, JavaScript, HTML5, CSS3", "system");
+            addHistoryLine("  Backend      : Node.js, Express.js, REST APIs, Microservices", "system");
+            addHistoryLine("  Database     : MongoDB, Mongoose, MySQL", "system");
+            addHistoryLine("  Programming  : Java, JavaScript", "system");
+            addHistoryLine("  Tools        : Git, GitHub, Postman, Docker, Vercel, Render", "system");
+        },
+        projects: () => {
+            addHistoryLine("My Key Projects:", "highlight");
+            addHistoryLine("1. <span class='highlight'>ShareMyFood 🍱</span>: MERN microservices-based food waste reduction platform connecting donors, users, NGOs, and delivery partners.", "success");
+            addHistoryLine("   Tech: React, Node.js, Express, MongoDB, JWT, Microservices", "system");
+            addHistoryLine("   Demo: <a href='https://sharemyfood-a193h9az7-dattas-projects-41fd6ae5.vercel.app' target='_blank' rel='noreferrer' style='color:#3b82f6;'>Live Demo</a> | Repo: <a href='https://github.com/dattahotur/ShareMyFood_APP' target='_blank' rel='noreferrer' style='color:#3b82f6;'>GitHub</a>", "system");
+            addHistoryLine("2. <span class='highlight'>Deliver My Food 🚚</span>: Delivery partner management platform integrated with ShareMyFood for real-time food delivery operations.", "success");
+            addHistoryLine("   Tech: React, Node.js, Express, MongoDB, JWT", "system");
+            addHistoryLine("   Demo: <a href='https://deliver-my-food-dn92xfonu-dattas-projects-41fd6ae5.vercel.app' target='_blank' rel='noreferrer' style='color:#3b82f6;'>Live Demo</a> | Repo: <a href='https://github.com/dattahotur/your-delivery-repo' target='_blank' rel='noreferrer' style='color:#3b82f6;'>GitHub</a>", "system");
+        },
+        contact: () => {
+            addHistoryLine("Connect with me:", "highlight");
+            addHistoryLine("  Email    : <a href='mailto:dattahotur369@gmail.com' style='color:#f59e0b;'>dattahotur369@gmail.com</a>", "system");
+            addHistoryLine("  GitHub   : <a href='https://github.com/dattahotur' target='_blank' rel='noreferrer' style='color:#f59e0b;'>github.com/dattahotur</a>", "system");
+            addHistoryLine("  LinkedIn : <a href='https://www.linkedin.com/in/gargeya-datta-hotur-7ab80a322' target='_blank' rel='noreferrer' style='color:#f59e0b;'>linkedin.com/in/gargeya-datta-hotur</a>", "system");
+        },
+        clear: () => {
+            termHistory.innerHTML = "";
+        },
+        exit: () => {
+            toggleTerminal();
+        }
+    };
+
+    termInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            const inputVal = termInput.value.trim().toLowerCase();
+            termInput.value = "";
+
+            if (!inputVal) return;
+
+            addHistoryLine(`gdatta@portfolio:~$ ${inputVal}`, "command");
+
+            if (commands[inputVal]) {
+                commands[inputVal]();
+            } else {
+                addHistoryLine(`Command not found: '${inputVal}'. Type 'help' for options.`, "error");
+            }
+        }
+    });
+
+    // ── Toast Notification System ──
+    function showToast(message, type = "success") {
+        const container = document.getElementById("toastContainer");
+        const toast = document.createElement("div");
+        toast.className = `toast toast-${type}`;
+
+        const icon = type === "success" ? "✓" : "✕";
+        toast.innerHTML = `
+            <span class="toast-icon">${icon}</span>
+            <span class="toast-message">${message}</span>
+            <div class="toast-progress"></div>
+        `;
+
+        container.appendChild(toast);
+
+        // Trigger animation
+        requestAnimationFrame(() => {
+            toast.classList.add("toast-show");
+        });
+
+        // Auto-dismiss after 4 seconds
+        setTimeout(() => {
+            toast.classList.remove("toast-show");
+            toast.classList.add("toast-hide");
+            setTimeout(() => toast.remove(), 400);
+        }, 4000);
+    }
+
+    // ── Contact Form with Validation ──
+    const form = document.getElementById("contactForm");
+
+    function validateField(field, errorEl, rules) {
+        const value = field.value.trim();
+        errorEl.textContent = "";
+        field.classList.remove("input-error");
+
+        if (rules.required && !value) {
+            errorEl.textContent = `${rules.label} is required`;
+            field.classList.add("input-error");
+            return false;
+        }
+        if (rules.minlength && value.length < rules.minlength) {
+            errorEl.textContent = `${rules.label} must be at least ${rules.minlength} characters`;
+            field.classList.add("input-error");
+            return false;
+        }
+        if (rules.pattern && !rules.pattern.test(value)) {
+            errorEl.textContent = rules.patternMsg;
+            field.classList.add("input-error");
+            return false;
+        }
+        return true;
+    }
+
+    // Detect if running on file:// protocol (no server available)
+    const isFileProtocol = window.location.protocol === "file:";
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+        const subjectField = document.getElementById("subject");
+        const messageField = document.getElementById("message");
+
+        const validations = [
+            validateField(nameField, document.getElementById("nameError"), {
+                required: true, minlength: 2, label: "Name"
+            }),
+            validateField(emailField, document.getElementById("emailError"), {
+                required: true, label: "Email",
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                patternMsg: "Please enter a valid email address"
+            }),
+            validateField(subjectField, document.getElementById("subjectError"), {
+                required: true, minlength: 3, label: "Subject"
+            }),
+            validateField(messageField, document.getElementById("messageError"), {
+                required: true, minlength: 10, label: "Message"
+            })
+        ];
+
+        if (validations.includes(false)) return;
+
+        // If opened via file:// protocol, backend is not reachable
+        if (isFileProtocol) {
+            showToast("Contact form requires a server. Please run via localhost or deploy to use this feature.", "error");
+            return;
+        }
+
+        const data = {
+            name: nameField.value.trim(),
+            email: emailField.value.trim(),
+            subject: subjectField.value.trim(),
+            message: messageField.value.trim()
+        };
+
+        const submitBtn = form.querySelector(".submit-btn");
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <span class="btn-icon">⏳</span>';
+
+        // Dynamically select endpoint for localhost vs deployed production environment
+        const isLocalHost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        const apiUrl = isLocalHost && window.location.port !== "5001"
+            ? "http://localhost:5001/contact"
+            : "/contact";
+
+        try {
+            const response = await fetch(
+                apiUrl,
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                }
+            );
+
+            if (!response.ok) {
+                let errorMsg = "Failed to send message. Please try again.";
+                try {
+                    const result = await response.json();
+                    errorMsg = result.message || errorMsg;
+                } catch (_) { /* response wasn't JSON */ }
+                showToast(errorMsg, "error");
+                return;
+            }
+
+            const result = await response.json();
+            showToast("Message sent successfully! I'll get back to you soon.", "success");
+            form.reset();
+            // Clear any remaining error states
+            form.querySelectorAll(".field-error").forEach(el => el.textContent = "");
+            form.querySelectorAll(".input-error").forEach(el => el.classList.remove("input-error"));
+
+        } catch (error) {
+            // Graceful offline/network failure handling without DevTools console errors
+            showToast("Unable to connect to server. Please check your network or email directly at dattahotur369@gmail.com.", "error");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Send Message <span class="btn-icon">→</span>';
+        }
+    });
+
+});
+</script>
+
+    </body>
+</html>
